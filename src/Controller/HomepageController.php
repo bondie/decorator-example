@@ -9,7 +9,6 @@
 namespace App\Controller;
 
 use App\Service\DecoratingExampleService;
-use Oxyshop\SkeletonBundle\Service\ExampleService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
