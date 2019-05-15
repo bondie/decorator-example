@@ -1,11 +1,19 @@
 {
     "type": "project",
     "license": "proprietary",
+    "repositories": {
+        "oxyshop": {
+            "type": "composer",
+            "url": "https://packagist.oxyshop.cz"
+        }
+    },
     "require": {
         "php": "^7.1.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "oxyshop/skeleton-bundle": "^1.0",
         "sensio/framework-extra-bundle": "^5.1",
+        "symfony/apache-pack": "^1.0",
         "symfony/asset": "4.2.*",
         "symfony/console": "4.2.*",
         "symfony/dotenv": "4.2.*",
@@ -74,7 +82,9 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "4.2.*"
+            "require": "4.2.*",
+            "id": "01D2EYN868D268J0314Z2WKBBE",
+            "endpoint": "https://flex.oxyshop.cz"
         }
     }
 }

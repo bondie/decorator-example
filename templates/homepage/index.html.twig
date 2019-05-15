@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{% block title %}Welcome{% endblock %}</h1>
+
+    name: {{ entity.name }}
+    value: {{ entity.value }}
+{% endblock %}

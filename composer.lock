@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cee4085fe3fa88057621162b3c43239f",
+    "content-hash": "344deb9b277509f4cb8a6b5ca6ec5cca",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -384,16 +384,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "1.11.0",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "6e15d2d9a8f90c0f9b5664b0db92686ff14fcd7d"
+                "reference": "09a38417339dc93849d051b914aae3947eb231a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/6e15d2d9a8f90c0f9b5664b0db92686ff14fcd7d",
-                "reference": "6e15d2d9a8f90c0f9b5664b0db92686ff14fcd7d",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/09a38417339dc93849d051b914aae3947eb231a7",
+                "reference": "09a38417339dc93849d051b914aae3947eb231a7",
                 "shasum": ""
             },
             "require": {
@@ -469,7 +469,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2019-05-10T13:27:28+00:00"
+            "time": "2019-05-13T14:30:38+00:00"
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
@@ -1558,6 +1558,82 @@
             "time": "2017-05-04T11:12:50+00:00"
         },
         {
+            "name": "oxyshop/component",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.oxyshop.cz/oxyshop/component.git",
+                "reference": "b5b19529b05e891994e46008856ff394614bba2b"
+            },
+            "require": {
+                "doctrine/orm": "^2.5",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "<=v2.10.0",
+                "jakub-onderka/php-console-highlighter": "^0.3.2",
+                "jakub-onderka/php-parallel-lint": "^0.9.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Oxyshop\\Component\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.oxyshop.cz/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Vladislav Barot",
+                    "email": "vladislav.barot@oxyshop.cz"
+                }
+            ],
+            "description": "Oxyshop components",
+            "time": "2019-05-09T12:54:14+00:00"
+        },
+        {
+            "name": "oxyshop/skeleton-bundle",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.oxyshop.cz/oxyshop/skeleton-bundle.git",
+                "reference": "cd143502db08089e520103f5eaabf47e09851eb7"
+            },
+            "require": {
+                "doctrine/doctrine-bundle": "^1.10",
+                "oxyshop/component": "^1.0",
+                "php": "^7.2",
+                "symfony/config": "^4.1",
+                "symfony/dependency-injection": "^4.1",
+                "symfony/http-kernel": "^4.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "<=v2.10.0",
+                "jakub-onderka/php-console-highlighter": "^0.3.2",
+                "jakub-onderka/php-parallel-lint": "^0.9.2"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Oxyshop\\SkeletonBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.oxyshop.cz/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Vladislav Barot",
+                    "email": "vladislav.barot@oxyshop.cz"
+                }
+            ],
+            "description": "Skeleton for Symfony bundles",
+            "time": "2019-05-14T12:21:23+00:00"
+        },
+        {
             "name": "phpdocumentor/reflection-common",
             "version": "1.0.1",
             "source": {
@@ -2082,6 +2158,28 @@
                 "mailer"
             ],
             "time": "2019-04-21T09:21:45+00:00"
+        },
+        {
+            "name": "symfony/apache-pack",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/apache-pack.git",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/apache-pack/zipball/3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "shasum": ""
+            },
+            "type": "symfony-pack",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A pack for Apache support in Symfony",
+            "time": "2017-12-12T01:46:35+00:00"
         },
         {
             "name": "symfony/asset",
